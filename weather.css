@@ -1,0 +1,31 @@
+body{
+  background-color: #161616;
+  color: #fff;
+}
+h1{
+  font-family: 'Roboto';
+  font-size: 80px;
+}
+div{
+  font-size: 40px;
+}
+.row{
+  text-align: center;
+  margin: 0px 0px;
+}
+.btn{
+  margin: 10px;
+}
+p{
+  margin: 0px;
+}
+#footer{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  margin: 18% auto auto auto;
+  padding: 15px;
+  bottom: 0;
+  color: white;
+  background-color: black;
+}
