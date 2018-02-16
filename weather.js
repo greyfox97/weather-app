@@ -17,20 +17,20 @@ $(document).ready(function(){
   var selector = document.querySelector("#loading");
   showLoading(selector);
 
-  var url = 'http://ip-api.com/json';
-  $.getJSON(url,function(data){
+  /* var url = 'http://ip-api.com/json';
+    $.getJSON(url,function(data){  */                  // this is commented becoz github blocked requests on http and i cant find any https api for country and state name
 
-  url = 'https://cors-anywhere.herokuapp.com/' + 'https://api.darksky.net/forecast/4fa59bc637d52f0ffc6612c294109040/' + lat + ',' + long;
+  var url = 'https://cors-anywhere.herokuapp.com/' + 'https://api.darksky.net/forecast/4fa59bc637d52f0ffc6612c294109040/' + lat + ',' + long;
   $.getJSON(url,function(result){
 
-    console.log(data);
+    /* console.log(data);
     var x = "<div class='text-center'>";
-    x += data.city + ',' + data.country + ',' + data.countryCode + "</div>";
+    x += data.city + ',' + data.country + ',' + data.countryCode + "</div>"; */
     //$('#location').html(data.city + ',' + data.country + ',' + data.countryCode);
 
     console.log(result);
 
-    x += "<div class='text-center'>" + ((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;' + "</div>";
+    var x s= "<div class='text-center'>" + ((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;' + "</div>";
     //$('#weather').html(((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;');
     x += "<div class='text-center'>" + result.currently.summary + "</div>";
     //$('#summary').html(result.currently.summary);
@@ -65,7 +65,7 @@ $(document).ready(function(){
         skycons.play();
 
         });
-      });
+      //});
     });
   }
 });
