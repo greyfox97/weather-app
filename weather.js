@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     console.log(result);
 
-    var x s= "<div class='text-center'>" + ((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;' + "</div>";
+    var x = "<div class='text-center'>" + ((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;' + "</div>";
     //$('#weather').html(((result.currently.temperature-32)*5/9).toFixed(2) + ' &#8451;');
     x += "<div class='text-center'>" + result.currently.summary + "</div>";
     //$('#summary').html(result.currently.summary);
